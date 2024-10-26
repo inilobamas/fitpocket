@@ -13,7 +13,7 @@ const workouts = [
 
 export function TrendingWorkouts() {
     return (
-        <section className="trending-workouts">
+        <section className="trending-workouts m-12">
             <h2 className="text-3xl font-bold mb-6">Trending workout</h2>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
                 <Select>

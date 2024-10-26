@@ -32,7 +32,11 @@ export default function SignInPage() {
                     <form className="space-y-4">
                         <Input type="email" placeholder="Email" className="bg-transparent border-gray-600" />
                         <Input type="password" placeholder="Password" className="bg-transparent border-gray-600" />
-                        <Button className="w-full bg-button text-white hover:bg-button-dark">Sign in</Button>
+                        <div className="mt-6">
+                            <Link href="/home">
+                                <Button className="w-full bg-button text-white hover:bg-button-dark">Sign in</Button>
+                            </Link>
+                        </div>
                     </form>
                     <div className="flex items-center justify-between mt-4">
                         <div className="flex items-center space-x-2">
@@ -62,7 +66,7 @@ export default function SignInPage() {
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className={`absolute inset-0 transition-opacity duration-1000 ${index === currentImage ? 'opacity-100' : 'opacity-0'
+                        className={`absolute inset-0 transition-opacity duration-3000 ${index === currentImage ? 'opacity-100' : 'opacity-0'
                             }`}
                     >
                         <Image
