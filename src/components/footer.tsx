@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { EmailForm } from '@/components/emailForm'
 
 const Footer = () => {
@@ -36,7 +37,7 @@ const Footer = () => {
                         ].map((social) => (
                             <Link key={social.name} href={`https://${social.name}.com`} className="hover:text-gray-300">
                                 <span className="sr-only">{social.name}</span>
-                                <img src={social.logo} alt={`${social.name} logo`} className="w-6 h-6 invert" />
+                                <Image src={social.logo} alt={`${social.name} logo`} width={24} height={24} className="invert" />
                             </Link>
                         ))}
                     </div>
