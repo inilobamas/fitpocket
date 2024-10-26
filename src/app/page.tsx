@@ -4,6 +4,7 @@ import { EmailForm } from '@/components/emailForm'
 import { TrendingWorkouts } from '@/components/trendingWorkout'
 import { MoreReasonsToJoin } from '@/components/moreReasonsToJoin'
 import { FAQ } from '@/components/faq'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <TrendingWorkouts />
         <MoreReasonsToJoin />
         <FAQ />
+        <Footer />
       </div>
     </main>
   )
